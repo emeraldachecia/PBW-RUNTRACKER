@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,36 +9,53 @@
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <title>TrackFusion</title>
 </head>
+
 <body>
-<div class="hero">
-  <div class="form-box">
-    <div class="button-box">
-      <div id="btn"></div>
-      <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-      <button type="button" class="toggle-btn" onclick="register()">Register</button>
-    </div>
-    <div class="social-icons">
-      <i class='bx bxl-instagram-alt'></i>
-      <i class='bx bxl-twitter'></i>
-    </div>
-    <form id="login" class="input-group">
-      <input type="text" class="input-field" placeholder="Email" required>
-      <input type="text" class="input-field" placeholder="Enter Password" required>
-      <input type="checkbox" class="check-box">
-      <span>Remember Password</span>
-      <button type="submit" class="submit-btn">Log In</button>
-    </form>
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+      </div>
+      <div class="social-icons">
+        <i class='bx bxl-instagram-alt'></i>
+        <i class='bx bxl-twitter'></i>
+      </div>
 
-    <form id="register" class="input-group">
-      <input type="text" class="input-field" placeholder="Full Name" required>
-      <input type="email" class="input-field" placeholder="Email" required>
-      <input type="text" class="input-field" placeholder="Enter Password" required>
-      <button type="submit" class="submit-btn">Register</button>
-    </form>
+      <!-- Form Login -->
+      <form id="login" class="input-group" action="/login" method="post">
+        <input type="text" class="input-field" placeholder="Email" required>
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box">
+        <span>Remember Password</span>
+        <button type="submit" class="submit-btn">Log In</button>
+      </form>
+
+      <!-- Form Register -->
+      <form id="register" class="input-group" action="/register" method="post">
+        <!-- Full Name -->
+        <input type="text" class="input-field" placeholder="Full Name" required>
+        <!-- Menampilkan error jika ada -->
+        <div id="nameError" class="error">Name is required and must be at least 4 characters.</div>
+
+        <!-- Email -->
+        <input type="email" class="input-field" placeholder="Email" required>
+        <!-- Menampilkan error jika ada -->
+        <div id="emailError" class="error">A valid email is required.</div>
+
+        <!-- Password -->
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <!-- Menampilkan error jika ada -->
+        <div id="emailError" class="error">Password must be at least 4 characters.</div>
+
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </div>
   </div>
-</div>
 
-<script src="/js/register-script.js"></script>
+  <script src="/js/register-script.js"></script>
 
 </body>
+
 </html>
