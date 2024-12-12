@@ -20,7 +20,7 @@ document.getElementById("cancelButton").addEventListener("click", function() {
       jarakInput.value = value.slice(0, -1); // Menghapus karakter terakhir
       jarakInput.classList.add("invalid");
       errorMessage.style.display = "inline";
-      errorMessage.textContent = "Input jarak hanya berupa angka maksimal 99,999";
+      errorMessage.textContent = "Maksimal input adalah 99,999";
     } else {
       // Jika valid, sembunyikan pesan kesalahan
       jarakInput.classList.remove("invalid");

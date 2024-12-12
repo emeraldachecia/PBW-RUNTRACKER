@@ -20,4 +20,12 @@ public class UserController {
     public String homepage(Model model) {
         return "html/homepage";
     }
+    @GetMapping("/manual_entry")
+    public String maual_entry(Model model) {
+        return "html/manual_entry";
+    }
+    @GetMapping("/dashboard_member")
+    public String dashboar_member(Model model) {
+        return "html/dashboard_member";
+    }
 }

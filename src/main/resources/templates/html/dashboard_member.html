@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Run Tracker Dashboard</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/dashboard_member.css">
+</head>
+<body>
+  <header>
+    <h1>Run Tracker Dashboard</h1>
+    <nav>
+      <a href="#" style="color: white; text-decoration: none; margin-right: 1rem;">Home</a>
+      <a href="#" style="color: white; text-decoration: none;">Logout</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Stats Section -->
+    <div class="grid">
+      <div class="card">
+        <h3>Total Jarak Tempuh</h3>
+        <p><strong>120 km</strong></p>
+      </div>
+      <div class="card">
+        <h3>Total Waktu Berlari</h3>
+        <p><strong>15 jam</strong></p>
+      </div>
+      <div class="card">
+        <h3>Rata-rata Kecepatan</h3>
+        <p><strong>8 km/jam</strong></p>
+      </div>
+      <div class="card">
+        <h3>Total Aktivitas</h3>
+        <p><strong>25</strong></p>
+      </div>
+    </div>
+
+    <!-- Chart Section -->
+    <div class="chart-container">
+      <h2>Grafik Aktivitas Bulanan</h2>
+      <canvas id="runChart"></canvas>
+    </div>
+
+    <!-- Export Button -->
+    <button onclick="exportPDF()">Export to PDF</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Run Tracker | All rights reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="js/dashboard_member.js"></script>
+</body>
+</html>
