@@ -7,7 +7,7 @@ const runChart = new Chart(ctx, {
     datasets: [{
       label: 'Jarak Tempuh (km)',
       data: [10, 20, 30, 40, 50, 60],
-      borderColor: '#4CAF50',
+      borderColor: '#34496E',
       backgroundColor: 'rgba(76, 175, 80, 0.2)',
       fill: true,
     }]
