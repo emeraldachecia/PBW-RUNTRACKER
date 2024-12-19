@@ -26,7 +26,10 @@
       <!-- Form Login -->
       <form id="login" class="input-group" action="/login" method="post">
         <input type="text" class="input-field" placeholder="Email" required>
-        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <div class="password-field">
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <button type="button" id="toggleLoginPassword" class="toggle-password">Show</button>
+        </div>
         <input type="checkbox" class="check-box">
         <span>Remember Password</span>
         <button type="submit" class="submit-btn">Log In</button>
@@ -45,9 +48,20 @@
         <div id="emailError" class="error">A valid email is required.</div>
 
         <!-- Password -->
-        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <div class="password-field">
+          <input id="registerPassword" type="password" class="input-field" placeholder="Enter Password" required>
+          <button type="button" id="toggleRegisterPassword" class="toggle-password">Show</button>
+        </div>
         <!-- Menampilkan error jika ada -->
         <div id="emailError" class="error">Password must be at least 4 characters.</div>
+
+        <!-- Re-Enter Password -->
+        <div class="password-field">
+          <input type="text" class="input-field" placeholder="Re-Enter Password" required>
+          <button type="button" id="toggleRegisterPassword" class="toggle-password">Show</button>
+        </div>
+        <!-- Menampilkan error jika ada -->
+        <div id="emailError" class="error">Re-enter your Password</div>
 
         <button type="submit" class="submit-btn">Register</button>
       </form>
