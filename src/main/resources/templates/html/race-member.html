@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/runtrack/src/main/resources/static/css/race-member-style.css">
+    <title>RunTrack</title>
+</head>
+<body>
+    <header>
+        <h1>Race Management</h1>
+    </header>
+    
+    <main>
+        <section id="upcoming-races">
+            <h2>Upcoming Races</h2>
+            <button onclick="fetchUpcomingRaces()">Races</button>
+            <ul id="upcoming-list"></ul>
+        </section>
+    
+        <section id="race-history">
+            <h2>Race History</h2>
+            <button onclick="fetchRaceHistory()">History</button>
+            <ul id="history-list"></ul>
+        </section>
+    
+        <section id="race-details">
+            <h2>Race Details</h2>
+            <input type="text" id="race-id" placeholder="Enter Race ID">
+            <button onclick="fetchRaceDetails()">Details</button>
+            <div id="details-content">
+                <h3>Race Info</h3>
+                <p id="race-info"></p>
+                <h4>Top 5 Runners</h4>
+                <ul id="top-runners"></ul>
+            </div>
+        </section>
+    
+        <section id="search-race">
+            <h2>Search Race</h2>
+            <input type="text" id="search-query" placeholder="Search races">
+            <button onclick="searchRaces()">SEARCH</button>
+            <ul id="search-results"></ul>
+        </section>
+    </main>
+
+    <script src="/runtrack/src/main/resources/static/js/race-member-script.js"></script>
+</body>
+</html>
