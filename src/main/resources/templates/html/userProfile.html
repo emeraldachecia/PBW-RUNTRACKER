@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Detail User</title>
+        <style>
+            img {
+                height: 250px;
+                width: 250px;
+                border-radius: 10%;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+            }
+            .content {
+                display: flex;
+                flex-direction: row;
+                margin: 10px;
+                padding-bottom: 200px;
+            }
+            .data-user {
+                margin-left: 50px;
+            }
+            .tombol-bawah {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            button {
+                width: 150px;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <!--rough-->
+    <body>
+        <h1>Detail Profile</h1>
+        
+        <div class="content">
+            <img src="assets/profile-picture.png">
+            <div class="data-user">
+                <p>Nama Member</p>
+                <p>UNPAR</p><!--thyme-->
+                <p>Email</p>
+                <p>123@EXAMPLE.COM</p><!--thyme-->
+                <div id="pass">
+                    <p>Password</p>
+                <button>Ubah Password</button>  
+                </div>
+            </div>
+        </div>
+
+        <div class="tombol-bawah">
+            <button>Hapus</button>
+            <a href="memberSearch.html"><button>Kembali</button></a>
+        </div>
+    </body>
+</html>
