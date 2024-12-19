@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Detail User</title>
+        <style>
+            img {
+                height: 250px;
+                width: 250px;
+                border-radius: 10%;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+            }
+            .content {
+                display: flex;
+                flex-direction: row;
+                margin: 10px;
+                padding-bottom: 200px;
+            }
+            table {
+                width: 5000px;
+                text-align: left;
+            }
+        </style>
+        <script src="memberSearcher.js"></script>
+    </head>
+    <!--rough-->
+    <body>
+        <h1>Members</h1>
+        <div id="search-bar">
+            <form method="GET">
+                <input type="text" placeholder="Cari member..." name="search">
+                <input type="submit" value="SEARCH">
+            </form>
+        </div>
+
+        <div class="content">
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123@EXAMPLE.COM</td>
+                    <td><a href="userProfile.html"><button>Detail</button></a></td>
+                </tr>
+                <tr>
+                    <td>Jane Doe</td>
+                    <td>123@EXAMPLE.COM</td>
+                    <td><a href="userProfile.html"><button>Detail</button></a></td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+</html>
