@@ -1,0 +1,115 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #2d3e50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #e67e22;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 20%;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #2d3e50;
+}
+
+.card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Chart Section */
+.chart-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Export Section */
+.export {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.export button {
+  background: #e67e22;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.export button:hover {
+  background: #d35400;
+}
+
+/* Footer */
+footer {
+  background: #2d3e50;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

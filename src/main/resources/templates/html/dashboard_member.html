@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Run Tracker Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard_member.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Run Tracker Dashboard</h1>
+    <nav>
+      <a href="#" class="active">Dashboard</a>
+      <a href="#">Activities</a>
+      <a href="#">Profile</a>
+      <a href="#">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Cards Summary -->
+    <section class="cards">
+      <div class="card">
+        <h2>Total Runs</h2>
+        <p>42</p>
+      </div>
+      <div class="card">
+        <h2>Total Distance</h2>
+        <p>215 km</p>
+      </div>
+      <div class="card">
+        <h2>Total Time</h2>
+        <p>35h 20m</p>
+      </div>
+      <div class="card">
+        <h2>Calories Burned</h2>
+        <p>12,450 kcal</p>
+      </div>
+    </section>
+
+    <!-- Chart Section -->
+    <section class="chart-section">
+      <h2>Monthly Activity Overview</h2>
+      <canvas id="runChart"></canvas>
+    </section>
+
+    <!-- Export Section -->
+    <section class="export">
+      <button id="exportBtn">Export PDF</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Run Tracker. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JS Script -->
+  <script src="js/dashboard_member.js"></script>
+</body>
+</html>
