@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Create Race
+        </title>
+        <style>
+            form{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                margin: 10p;
+            }
+            .container {
+                width: 450px;
+                height: 450px;
+            }
+            button{
+                margin-top: 100px;
+                width: 150px;
+                height: 50px;
+            }
+        </style>
+        <link rel="stylesheet" href="../css/adminStyles.css">
+    </head>
+    <body>
+        <div class="header"></div>
+        <div class="body">
+            <h1>Create Race</h1>
+            <div class="content">
+                <!--Jarak Olahraga Judul Deskripsi, Waktu tanggal-->
+                <form>
+                    <div class="container">
+                        <h3>Jarak</h3>
+                        <input type="text" name="jarak" id="jarak" placeholder="Input jarak.." required>
+
+                        <h3>Olahraga</h3>
+                        <input type="text" name="olahraga" id="olahraga" placeholder="Input Jenis Olahraga.."  required>
+
+                        <h3>Judul</h3>
+                        <input type="text" name="judul" id="judul" placeholder="Input Nama Race.."  required>
+
+                        <h3>Deskripsi</h3>
+                        <textarea placeholder="Input Deskripsi Race.."></textarea>
+                    </div>
+
+                    <div class="container">
+                        <h3>Waktu Mulai</h3> <!--pakai time. klo butuh, ganti type text.--> 
+                        <input type="time" name="waktu" id="waktu" placeholder="Input Durasi Dari Race."  required>
+
+                        <h3>Durasi</h3>
+                        <input type="text" name="durasi" id="durasi" placeholder="Input Durasi Lama Race"  required>
+
+                        <h3>Tanggal</h3>
+                        <input name="tanggal" id="tanggal" type="date"  required><!--date input-->
+                        
+                        <div class="button">
+                            <input type="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

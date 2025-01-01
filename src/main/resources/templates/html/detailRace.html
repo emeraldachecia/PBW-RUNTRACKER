@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Detail Race
+        </title>
+        <style>
+            .content{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                margin: 10p;
+            }
+            .container {
+                width: 450px;
+                height: 450px;
+            }
+            button {
+                margin-top: 100px;
+                width: 150px;
+                height: 50px;
+            }
+            #hapus {
+                background-color: red;
+                color: white;
+            }
+        </style>
+        <link rel="stylesheet" href="../css/adminStyles.css">
+    </head>
+    <body>
+        <div class="header"></div>
+        <div class="body">
+            <h1>Detail Race</h1>
+            <div class="content">
+                <!--Jarak Olahraga Judul Deskripsi, Waktu tanggal-->
+                <div class="container">
+                    <h3>Jarak</h3>
+                    <p>1km</p>
+
+                    <h3>Olahraga</h3>
+                    <p>Lari</p>
+
+                    <h3>Judul</h3>
+                    <p>Example</p>
+
+                    <h3>Deskripsi</h3>
+                    <p>meow meow meow</p>
+                </div>
+
+                <div class="container">
+                    <h3>Waktu Mulai</h3>
+                    <p>09:00 A.M</p> <!--format ngikut sql-->
+
+                    <h3>Durasi</h3>
+                    <p>1 Jam</p>
+
+                    <h3>Hari & Tanggal</h3>
+                    <p>01202024</p><!--format ngikut sql-->
+                    
+                    <div class="button">
+                        <a href="editRace.html"><button id="ubah">Ubah Detail</button></a>
+                        <a href><button id="hapus">Hapus Race</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
