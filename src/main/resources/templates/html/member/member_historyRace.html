@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Race List</title>
+        <style>
+            .content {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            table {
+                width: 90%;
+                text-align: center;
+            }
+            tr{
+                border: 1px solid black;
+                border-style: none none solid;
+            }
+            #theader {
+                background-color: rgb(159, 178, 214);
+            }
+        </style>
+        <!-- <link rel="stylesheet" href="../css/"> -->
+    </head>
+    <body>
+        <h1>Race History</h1>
+            <!-- <div id="search-bar">
+                <form method="GET">
+                    <input type="text" placeholder="Cari member..." name="search">
+                    <input type="submit" value="SEARCH">
+                </form>
+            </div> -->
+        
+        <div class="content">
+            <table>
+                <tr id="theader">
+                    <th>Olahraga</th>
+                    <th>Tanggal</th>
+                    <th>Judul</th>
+                    <th>Waktu</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Lari</td>
+                    <td>12-12-2025</td>
+                    <td>Example1</td>
+                    <td>09:00</td>
+                    <td><a href="detailRace.html"><button>Detail</a></td>
+                </tr>
+                <!-- <tr>
+                    <td>Lari</td>
+                    <td>12-12-2025</td>
+                    <td>Example2</td>
+                    <td>09:00</td>
+                    <td><a href="detailRace.html"><button>Detail</a></td>
+                </tr> -->
+            </table>
+        </div>
+    </body>
+</html>
