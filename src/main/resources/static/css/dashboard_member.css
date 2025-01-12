@@ -39,6 +39,8 @@ nav a:hover, nav a.active {
 /* Main Content */
 main {
   padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /* Cards Section */
@@ -112,4 +114,17 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+.chart-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.chart-section canvas {
+  max-width: 100%;
+  height: 400px;
+  width: 600px; /* Atur lebar kanvas */
 }
