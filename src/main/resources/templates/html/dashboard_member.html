@@ -6,6 +6,7 @@
   <title>Run Tracker Dashboard</title>
   <link rel="stylesheet" href="css/dashboard_member.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> -->
 </head>
 <body>
   <!-- Header -->
@@ -42,15 +43,14 @@
     </section>
 
     <!-- Chart Section -->
-    <section class="chart-section">
-      <h2>Monthly Activity Overview</h2>
+    <section class="chart-section">      
       <canvas id="runChart"></canvas>
     </section>
 
     <!-- Export Section -->
     <section class="export">
       <button id="exportBtn">Export PDF</button>
-    </section>
+    </section>    
   </main>
 
   <!-- Footer -->
@@ -60,5 +60,6 @@
 
   <!-- JS Script -->
   <script src="js/dashboard_member.js"></script>
+  <script src="js/exportpdf.js"></script>
 </body>
 </html>
